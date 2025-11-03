@@ -1,0 +1,5 @@
+DATA_PATH = "data"
+# EMBEDDING_MODEL = "model/halong_embedding"
+EMBEDDING_MODEL = "model/all-MiniLM-L6-v2"
+LLM_MODEL = "model/Qwen2.5-3B-Instruct"
+RERANKER_MODEL = "model/mxbai-rerank-large-v1"
