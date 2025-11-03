@@ -12,7 +12,7 @@ class LocalLLM:
             dtype=torch.float16
         )
 
-    def generate(self, messages: list, max_tokens: int = 512) -> str:
+    def generate(self, messages: list, max_tokens: int = 256) -> str:
         text = self.tokenizer.apply_chat_template(
             messages,
             tokenize=False,
