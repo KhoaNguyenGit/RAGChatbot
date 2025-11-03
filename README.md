@@ -7,30 +7,29 @@ This project is a local AI-powered question-answering system for medical documen
 ## Project Structure
 
 ```bash
+├── main.py # Main entry point to run the application
+├── requirements.txt # Python dependencies
+├── setup.sh # Setup script for environment and models
+│
 ├── config/ # Configuration files for the system
 │ └── configs.py
 │
 ├── data/ # Input data files
 │ └── Medical_book.pdf
 │
-├── main.py # Main entry point to run the application
-│
 ├── model/ # Pretrained models used for embeddings, ranking, and LLM
 │ ├── Qwen2.5-3B-Instruct
 │ ├── all-MiniLM-L6-v2
 │ └── mxbai-rerank-large-v1
 │
-├── requirements.txt # Python dependencies
-├── setup.sh # Setup script for environment and models
-│
 ├── src/ # Source code
 │ ├── __init__.py
+│ ├── helpers.py # Helper functions
+│ │
 │ ├── data_processing/pdf # PDF processing modules
 │ │ ├── __init__.py
 │ │ ├── pdf_loader.py
 │ │ └── text_spliter.py
-│ │
-│ ├── helpers.py # Helper functions
 │ │
 │ ├── llm/ # Local LLM interface
 │ │ ├── __init__.py
