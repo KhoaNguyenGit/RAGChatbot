@@ -6,6 +6,7 @@ This project is a local AI-powered question-answering system for medical documen
 
 ## Project Structure
 
+```bash
 ├── config/ # Configuration files for the system
 │ └── configs.py
 │
@@ -48,6 +49,7 @@ This project is a local AI-powered question-answering system for medical documen
 │ └── style.css
 ├── template/ # HTML templates for web interface
 │ └── index.html
+```
 
 ## Features
 
@@ -69,7 +71,7 @@ This project is a local AI-powered question-answering system for medical documen
 
 2. Create venv python:
     ```bash
-    sudo chmod +x setup.sh
+    chmod +x setup.sh
     ./setup.sh
     ```
 
