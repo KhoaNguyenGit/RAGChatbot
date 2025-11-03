@@ -74,14 +74,16 @@ This project is a local AI-powered question-answering system for medical documen
     ./setup.sh
     ```
 
-3. Install dependencies:
+3. Create the ```model/``` folder and download models:
     ```bash
-    pip install -r requirements.txt
-    ```
+    mkdir -p model
+    cd model
 
-4. Run the setup script to download or configure models:
-    ```bash
-    bash setup.sh
+    git clone <Qwen2.5-3B-Instruct_repo_url> Qwen2.5-3B-Instruct
+    git clone <all-MiniLM-L6-v2_repo_url> all-MiniLM-L6-v2
+    git clone <mxbai-rerank-large-v1_repo_url> mxbai-rerank-large-v1
+
+    cd ..
     ```
 
 ---
