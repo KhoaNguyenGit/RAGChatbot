@@ -8,6 +8,7 @@ This project is a local AI-powered question-answering system for medical documen
 
 ```bash
 ├── main.py # Main entry point to run the application
+├── app.py # Initializes Flask app and routes 
 ├── requirements.txt # Python dependencies
 ├── setup.sh # Setup script for environment and models
 │
