@@ -9,3 +9,4 @@ langchain-community==0.3.26
 qdrant_client==1.15.1
 accelerate==1.11.0
 python-dotenv==1.1.0
+flask-cors==6.0.1

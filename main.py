@@ -97,10 +97,10 @@ def main():
     # delete_collection(host, api_key=qdrant_api_key, collection_name=collection_name)
     
     # Qdrant retrieve vector
-    # results = retrieve_vector(EMBEDDING_MODEL, host, qdrant_api_key, collection_name)
-    # print("\n=== Retrieved Vectors ===\n")
-    # for result in results:
-    #     print(f"{result}\n\n")
+    results = retrieve_vector(EMBEDDING_MODEL, host, qdrant_api_key, collection_name)
+    print("\n=== Retrieved Vectors ===\n")
+    for result in results:
+        print(f"{result}\n\n")
 
     # query = "what do you know about acne?"
     # response = retrieve_and_respond(

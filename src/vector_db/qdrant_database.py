@@ -36,7 +36,7 @@ class QdrantDBClient:
         self, 
         query_vector: list, 
         top_k: int, 
-        score_threshold: float = 0.0
+        score_threshold: float = 0.5
     ) -> List[Dict[str, Any]]:
         raw_results = self.client.search(
             collection_name=self.collection_name,
